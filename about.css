@@ -182,15 +182,6 @@ header {
   font-weight: 16px;
 }
 
-#program-section {
-  background: var(--dark);
-  background-image: radial-gradient(black 1px, transparent 0);
-  background-size: 10px 10px;
-  background-position: -19px -19px;
-  height: 30vh;
-  min-width: 100vw;
-}
-
 
 
 
