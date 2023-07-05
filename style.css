@@ -19,7 +19,8 @@
 header {
   position: fixed;
   min-width: 100vw;
-  background-color: rgb(219 219 219 / 95%);;
+  background-color: rgb(219 219 219 / 70%);
+  z-index: 5;
 }
 
 #mobile-menu {
@@ -214,16 +215,16 @@ header {
 }
 
 .event-card {
-  background: rgb(59, 59, 59);
-  background-image: radial-gradient(#272a31 2px, transparent 0);
-  background-size: 15px 15px;
-  background-position: -19px -19px;
+  background: rgb(59 59 59);
   color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 8px;
   gap: 4px;
   width: 100%;
+  background-image: radial-gradient(#272a31 2px, transparent 0);
+  background-size: 15px 15px;
+  background-position: -19px -19px;
 }
 
 .event-icon {
@@ -271,6 +272,139 @@ header {
   display: none;
   text-decoration: underline;
   color: white;
+  font-size: medium;
+}
+
+#advisors-section {
+  min-width: 100%;
+  padding: 24px 6.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.advisors-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advisors-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.adv-card {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.container {
+  width: 37%;
+  display: flex;
+}
+
+.img-container {
+  position: relative;
+  background-color: white;
+  height: 107px;
+  width: 107px;
+}
+
+.checker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 40%;
+  z-index: 3;
+  background: url('assets/img/checker1.png');
+  background-size: cover;
+}
+
+.adv-img {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.right-block {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.adv-card-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.adv-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adv-title {
+  color: var(--red-like);
+  font-size: 10px;
+}
+
+.card-divider {
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  width: 20px;
+}
+
+.adv-description {
+  color: var(--dark);
+  font-size: 12px;
+}
+
+#more {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  color: var(--dark);
+  text-align: center;
+  font-weight: 500;
+  padding: 9px;
+  cursor: pointer;
+}
+
+#more span {
+  color: var(--red-like);
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 8px;
+  font-family: cocogoose, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 @media (width >= 768px) {
@@ -304,8 +438,7 @@ header {
   }
 
   .event-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 4px;
   }
 
@@ -340,5 +473,30 @@ header {
 
   .see-more {
     display: block;
+  }
+
+  .advisors-cards {
+    flex-flow: row wrap;
+  }
+  
+  .adv-card {
+    width: 48%;
+  }
+
+  .checker {
+    background: url('assets/img/checker2.png');
+    background-size: cover;
+  }
+
+  #more {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .more {
+    flex-flow: row wrap;
   }
 }

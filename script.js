@@ -20,3 +20,19 @@ function hideMenu() {
 closeBtn.addEventListener('click', hideMobileMenu);
 humburger.addEventListener('click', displayMobileMenu);
 mobileNav.addEventListener('click', hideMenu);
+
+const more = document.querySelector('#more');
+const hidden = document.querySelector('.hidden');
+
+function showMore() {
+  if (hidden.style.display === 'none') hidden.style.display = 'block';
+  else hidden.style.display = 'none';
+}
+
+function hideMore() {
+  if (hidden.style.display === 'block') more.style.display = 'none';
+  else (more.style.display = 'block');
+}
+
+more.addEventListener('click', showMore);
+more.addEventListener('click', hideMore);
