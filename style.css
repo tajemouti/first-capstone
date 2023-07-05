@@ -13,22 +13,20 @@
   margin: 0;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 header {
   position: fixed;
   min-width: 100vw;
+  background-color: rgb(219 219 219 / 95%);;
 }
 
 #mobile-menu {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0 , 0, .5);
+  inset: 0;
+  background-color: rgb(0 0 0 / 50%);
   opacity: 1;
   z-index: 9;
 }
@@ -49,8 +47,9 @@ header {
   gap: 24px;
   width: 70vw;
   padding: 16px 10%;
-  background-color: rgba(156, 156, 156, .98);
+  background-color: rgb(156 156 156 / 98%);
   z-index: 10;
+  border-radius: 0 15px 15px 0;
 
 }
 
@@ -62,7 +61,7 @@ header {
 }
 
 .mobile-menu-item a {
-  font-family: "cocogoose", sans-serif;
+  font-family: cocogoose, sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
@@ -105,7 +104,6 @@ header {
 }
 
 #nav-bar2 {
-  color: var(--dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +125,10 @@ header {
   align-items: center;
 }
 
+.nav-bar2-item a {
+  color: var(--dark);
+}
+
 #exhibition {
   border: 3px solid var(--red-like);
   padding: 8px;
@@ -146,19 +148,17 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 15% 6.4%;
-  padding-top: 20%;
+  padding-top: 25%;
   gap: 12px;
 }
 
 #headline-title {
-  font-family: "cocogoose", sans-serif;
-  color: transparent;
-  background-image: url(assets/img/background2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
+  font-family: cocogoose, sans-serif;
+  background: url('assets/img/background2.png');
   line-height: 1em;
+  font-size: 2em;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .subtitle {
@@ -170,32 +170,110 @@ header {
   background-color: var(--light);
   padding: 12px;
   max-width: 478px;
+  font-size: small;
 }
 
 .schedule {
-  font-family: "cocogoose", sans-serif;
+  font-family: cocogoose, sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
 
-#location {
-  font-weight: 16px;
-}
-
 #program-section {
-  background: var(--dark);
-  background-image: radial-gradient(black 1px, transparent 0);
-  background-size: 10px 10px;
-  background-position: -19px -19px;
-  height: 30vh;
-  min-width: 100vw;
+  background: url('assets/img/programSectionPattern.png');
+  min-width: 100%;
+  padding: 24px 6.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
+.program-heading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
 
+.divider {
+  border: 1px solid var(--red-like);
+  border-radius: 5px;
+  width: 48px;
+}
 
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 
+}
 
-@media (min-width: 768px) {
+.event-card {
+  background: rgb(59, 59, 59);
+  background-image: radial-gradient(#272a31 2px, transparent 0);
+  background-size: 15px 15px;
+  background-position: -19px -19px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  gap: 4px;
+  width: 100%;
+}
+
+.event-icon {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-card img {
+  height: 32px;
+  width: 32px;
+}
+
+.card-title {
+  color: var(--red-like);
+  width: 33%;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  
+}
+
+.card-description {
+  width: 53%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#register {
+  background-color: var(--red-like);
+  width: 70%;
+  max-width: 400px;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-more {
+  display: none;
+  text-decoration: underline;
+  color: white;
+}
+
+@media (width >= 768px) {
   .humburger {
     display: none;
   }
@@ -223,5 +301,44 @@ header {
 
   .subtitle {
     font-size: 2em;
+  }
+
+  .event-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .event-card {
+    width: 19%;
+    flex-direction: column;
+    height: 190px;
+  }
+  
+  .event-icon {
+    width: 100%;
+    height: 23%;
+  }
+  
+  .card-title {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 18%;
+
+  }
+  
+  .card-description {
+    width: 100%;
+    height: 53%;
+    text-align: center;
+  }
+
+  #register {
+    display: none;
+  }
+
+  .see-more {
+    display: block;
   }
 }

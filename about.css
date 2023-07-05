@@ -13,7 +13,7 @@
   margin: 0;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 header {
@@ -24,11 +24,8 @@ header {
 #mobile-menu {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0 , 0, .5);
+  inset: 0;
+  background-color: rgb(0 0 0 / 50%);
   opacity: 1;
   z-index: 9;
 }
@@ -49,8 +46,9 @@ header {
   gap: 24px;
   width: 70vw;
   padding: 16px 10%;
-  background-color: rgba(156, 156, 156, .98);
+  background-color: rgb(156 156 156 / 98%);
   z-index: 10;
+  border-radius: 0 15px 15px 0;
 
 }
 
@@ -62,7 +60,7 @@ header {
 }
 
 .mobile-menu-item a {
-  font-family: "cocogoose", sans-serif;
+  font-family: cocogoose, sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
@@ -105,7 +103,6 @@ header {
 }
 
 #nav-bar2 {
-  color: var(--dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +124,10 @@ header {
   align-items: center;
 }
 
+.nav-bar2-item a {
+  color: var(--dark);
+}
+
 #exhibition {
   border: 3px solid var(--red-like);
   padding: 8px;
@@ -144,21 +145,19 @@ header {
   min-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 15% 6.4%;
-  padding-top: 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6.4%;
+  padding-top: 25%;
   gap: 12px;
 }
 
 #headline-title {
-  font-family: "cocogoose", sans-serif;
-  color: transparent;
-  background-image: url(assets/img/background2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
+  font-family: cocogoose, sans-serif;
+  color: var(--red-like);
   line-height: 1em;
+  font-size: 2em;
+  text-align: center;
 }
 
 .subtitle {
@@ -166,27 +165,30 @@ header {
 }
 
 .description {
-  border: 1px solid white;
-  background-color: var(--light);
-  padding: 12px;
+  background-color: white;
+  padding: 16px 5%;
   max-width: 478px;
+  text-align: center;
+  font-size: small;
 }
 
-.schedule {
-  font-family: "cocogoose", sans-serif;
-  font-size: 20px;
+.hide {
+  display: none;
+}
+
+#contact {
+  font-size: 12px;
+  text-align: center;
+}
+
+#contact a {
   font-weight: 700;
 }
 
-#location {
-  font-weight: 16px;
-}
 
 
 
-
-
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .humburger {
     display: none;
   }
@@ -206,6 +208,7 @@ header {
 
   #headline-section {
     height: 100vh;
+    padding-top: 15%;
   }
 
   #headline-title {
@@ -213,6 +216,14 @@ header {
   }
 
   .subtitle {
-    font-size: 2em;
+    display: none;
+  }
+
+  .description {
+    max-width: 620px;
+  }
+
+  .hide {
+    display: block;
   }
 }
