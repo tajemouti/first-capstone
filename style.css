@@ -505,6 +505,10 @@ footer div p {
     font-size: 2em;
   }
 
+  .description {
+    font-size: 14px;
+  }
+
   .event-cards {
     flex-flow: row wrap;
     gap: 4px;
