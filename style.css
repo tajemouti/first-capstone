@@ -51,7 +51,6 @@ header {
   background-color: rgb(156 156 156 / 98%);
   z-index: 10;
   border-radius: 0 15px 15px 0;
-
 }
 
 .mobile-menu-item {
@@ -66,7 +65,6 @@ header {
   font-weight: 700;
   font-size: 24px;
 }
-
 
 .nav-bar {
   display: none;
@@ -101,7 +99,6 @@ header {
 
 .social a {
   padding-left: 8px;
-
 }
 
 #nav-bar2 {
@@ -212,7 +209,6 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-
 }
 
 .event-card {
@@ -248,7 +244,6 @@ header {
   display: flex;
   align-items: center;
   padding: 4px;
-  
 }
 
 .card-description {
@@ -435,7 +430,7 @@ header {
 
 .logoes-link {
   width: 20%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logoes-link:hover {
@@ -466,7 +461,6 @@ footer div div {
 
 footer div p {
   font-size: 12px;
-
 }
 
 .tarsus {
@@ -478,7 +472,7 @@ footer div p {
   .humburger {
     display: none;
   }
-  
+
   .nav-bar {
     display: block;
   }
@@ -514,20 +508,19 @@ footer div p {
     flex-direction: column;
     height: 190px;
   }
-  
+
   .event-icon {
     width: 100%;
     height: 23%;
   }
-  
+
   .card-title {
     width: 100%;
     text-align: center;
     justify-content: center;
     height: 18%;
-
   }
-  
+
   .card-description {
     width: 100%;
     height: 53%;
@@ -545,7 +538,7 @@ footer div p {
   .advisors-cards {
     flex-flow: row wrap;
   }
-  
+
   .adv-card {
     width: 48%;
   }

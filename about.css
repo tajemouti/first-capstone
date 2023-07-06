@@ -51,7 +51,6 @@ header {
   background-color: rgb(156 156 156 / 98%);
   z-index: 10;
   border-radius: 0 15px 15px 0;
-
 }
 
 .mobile-menu-item {
@@ -66,7 +65,6 @@ header {
   font-weight: 700;
   font-size: 24px;
 }
-
 
 .nav-bar {
   display: none;
@@ -101,7 +99,6 @@ header {
 
 .social a {
   padding-left: 8px;
-
 }
 
 #nav-bar2 {
@@ -168,11 +165,12 @@ header {
 }
 
 .description {
-  background-color: white;
+  background-color: rgb(255 255 255 / 80%);
   padding: 16px 5%;
   max-width: 478px;
   text-align: center;
   font-size: small;
+  border-radius: 3px;
 }
 
 .hide {
@@ -302,7 +300,7 @@ header {
 
 .logoes-link {
   width: 20%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logoes-link:hover {
@@ -360,7 +358,7 @@ footer div p {
   .humburger {
     display: none;
   }
-  
+
   .nav-bar {
     display: block;
   }
@@ -407,7 +405,7 @@ footer div p {
   #past-section div {
     flex-flow: row wrap;
   }
-  
+
   .past-link {
     width: 48%;
   }
@@ -425,7 +423,7 @@ footer div p {
   #footer-text1 {
     display: block;
   }
-  
+
   #footer-text2 {
     display: none;
   }
