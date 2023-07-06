@@ -289,6 +289,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  color: var(--dark);
 }
 
 .advisors-cards {
@@ -406,6 +408,61 @@ header {
   gap: 24px;
 }
 
+#partners-section {
+  display: none;
+  text-align: center;
+  background-color: var(--dark);
+  padding: 24px 6.4%;
+}
+
+.partners-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light);
+  font-size: 18px;
+  gap: 12px;
+}
+
+.logoes {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.logoes img {
+  width: 20%;
+}
+
+footer {
+  display: none;
+  padding: 24px 6.4%;
+}
+
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+footer div div {
+  display: flex;
+  align-items: center;
+}
+
+footer div p {
+  font-size: 12px;
+
+}
+
+footer div p a {
+  font-weight: 700;
+  color: var(--red-like);
+}
+
 @media (width >= 768px) {
   .humburger {
     display: none;
@@ -497,5 +554,13 @@ header {
 
   .more {
     flex-flow: row wrap;
+  }
+
+  #partners-section {
+    display: block;
+  }
+
+  footer {
+    display: block;
   }
 }

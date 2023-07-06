@@ -187,8 +187,80 @@ header {
   font-weight: 700;
 }
 
+#partners-section {
+  text-align: center;
+  background-color: var(--dark);
+  padding: 24px 6.4%;
+}
 
+.partners-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light);
+  font-size: 18px;
+  gap: 12px;
+}
 
+.divider {
+  border: 1px solid var(--red-like);
+  border-radius: 5px;
+  width: 48px;
+}
+
+.logoes {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.logoes img {
+  width: 20%;
+}
+
+footer {
+  padding: 12px 10%;
+}
+
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer div div {
+  display: flex;
+  align-items: center;
+  width: 63%;
+}
+
+footer div p {
+  font-size: 12px;
+}
+
+#footer-text1 {
+  display: none;
+}
+
+#footer-text2 {
+  display: block;
+}
+
+footer div a {
+  width: 33%;
+}
+
+footer div a img {
+  height: 100%;
+  width: 100%;
+}
+
+footer div p a {
+  font-weight: 700;
+  color: var(--red-like);
+}
 
 @media (width >= 768px) {
   .humburger {
@@ -226,5 +298,23 @@ header {
 
   .hide {
     display: block;
+  }
+
+  #partners-section {
+    display: none;
+  }
+
+  footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 24px 10%;
+  }
+
+  #footer-text1 {
+    display: block;
+  }
+  
+  #footer-text2 {
+    display: none;
   }
 }
