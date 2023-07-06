@@ -22,9 +22,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [First Capstone Project] <a name="about-project"></a>
 
-**[Portfolio]** is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And to build a professional Landing website based on Adobe template..
+**[First Capstone Project]** is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And to build a professional Landing website based on Adobe template..
 
 ## 🛠 Built With <a name="built-with"></a>
 Visual Studia Code, Figma and HTML/CSS/JavaScript linters 
@@ -39,21 +39,23 @@ Visual Studia Code, Figma and HTML/CSS/JavaScript linters
   <summary>CSS</summary>
 </details>
 
+<details>
+  <summary>JavaScript</summary>
+</details>
+
 ### Key Features <a name="key-features"></a>
 
 - **[Linters implementation]**
 - **[Landing homep and about pages]**
-
+- **[Deployment on GitHub Pages]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://tajemouti.github.io/first-capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -115,13 +117,11 @@ npx eslint .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ### Deployment
 
 This project is deployed using Github Pages and Git bash..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -133,14 +133,12 @@ This project is deployed using Github Pages and Git bash..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[A professional landing webpage]**
+- [ ] **[A professional landing Website]**
 - [ ] **[Implementing more linters]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -150,23 +148,19 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
-This is my first Portfolio project ever.
+This is my first Capstone project ever.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partner [Titus](https://github.com/Titus-Kiplagat) .. I really appreciate your contribution..
-
+I would like to thank [Cindy Shin](https://www.behance.net/adagio07) for the original [Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](/LICENSE) license.
+This project is [Creative Commons](/LICENSE) license.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
