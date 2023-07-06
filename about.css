@@ -141,9 +141,10 @@ header {
 }
 
 #headline-section {
-  background-image: url("assets/img/Background1.png");
+  background-image: url("assets/img/f-22-raptor.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -187,6 +188,89 @@ header {
   font-weight: 700;
 }
 
+#logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d3d3;
+  padding: 24px 6.4%;
+  gap: 12px;
+}
+
+.logo-past-heading {
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.logo-background {
+  background-image: url('assets/img/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 360px;
+  height: 93px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+}
+
+#past-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 6.4%;
+  gap: 12px;
+}
+
+#past-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.past-link {
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--red-like);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 100%;
+  min-height: 240px;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.bigger-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.past-background1 {
+  background-image: url('assets/img/pastshow1.png');
+}
+
+.past-background2 {
+  background-image: url('assets/img/pastshow2.png');
+}
+
+.past-img {
+  height: 100%;
+  width: 100%;
+}
+
 #partners-section {
   text-align: center;
   background-color: var(--dark);
@@ -206,7 +290,7 @@ header {
 .divider {
   border: 1px solid var(--red-like);
   border-radius: 5px;
-  width: 48px;
+  width: 20px;
 }
 
 .logoes {
@@ -224,13 +308,13 @@ footer {
   padding: 12px 10%;
 }
 
-footer div {
+.container2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-footer div div {
+.container3 {
   display: flex;
   align-items: center;
   width: 63%;
@@ -248,16 +332,16 @@ footer div p {
   display: block;
 }
 
-footer div a {
+.show-logo {
   width: 33%;
 }
 
-footer div a img {
+.show-logo img {
   height: 100%;
   width: 100%;
 }
 
-footer div p a {
+.tarsus {
   font-weight: 700;
   color: var(--red-like);
 }
@@ -282,6 +366,7 @@ footer div p a {
 
   #headline-section {
     height: 100vh;
+    gap: 36px;
   }
 
   #headline-title {
@@ -298,6 +383,23 @@ footer div p a {
 
   .hide {
     display: block;
+  }
+
+  #contact {
+    padding-top: 240px;
+  }
+
+  .logo-background {
+    width: 480px;
+    height: 124px;
+  }
+
+  #past-section div {
+    flex-flow: row wrap;
+  }
+  
+  .past-link {
+    width: 48%;
   }
 
   #partners-section {

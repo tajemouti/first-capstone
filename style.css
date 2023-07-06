@@ -144,6 +144,7 @@ header {
   background-image: url("assets/img/Background1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -458,7 +459,7 @@ footer div p {
 
 }
 
-footer div p a {
+.tarsus {
   font-weight: 700;
   color: var(--red-like);
 }
