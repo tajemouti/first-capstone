@@ -374,7 +374,8 @@ footer div p {
 
   #headline-section {
     height: 100vh;
-    gap: 36px;
+    padding-top: 120px;
+    gap: 48px;
   }
 
   #headline-title {
@@ -391,10 +392,6 @@ footer div p {
 
   .hide {
     display: block;
-  }
-
-  #contact {
-    padding-top: 240px;
   }
 
   .logo-background {

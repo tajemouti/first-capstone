@@ -169,13 +169,20 @@ header {
   background-color: var(--light);
   padding: 12px;
   max-width: 478px;
-  font-size: small;
+  font-size: 12px;
+  color: var(--dark);
+  opacity: 0.9;
+  border-radius: 3px;
 }
 
 .schedule {
   font-family: cocogoose, sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+
+#location {
+  color: var(--dark);
 }
 
 #program-section {
@@ -536,6 +543,7 @@ footer div p {
   }
 
   .advisors-cards {
+    max-width: 820px;
     flex-flow: row wrap;
   }
 
@@ -554,6 +562,7 @@ footer div p {
 
   .hidden {
     display: block;
+    max-width: 820px;
   }
 
   .more {
