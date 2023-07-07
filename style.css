@@ -106,7 +106,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 1% 6.4%;
+  padding: 4px 6.4%;
 }
 
 #logo {
@@ -142,7 +142,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 100vw;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,5 +579,34 @@ footer div p {
 
   footer {
     display: block;
+  }
+}
+
+@media (width >= 1024px) {
+  #nav-bar2 {
+    padding: 4px 14%;
+  }
+
+  #headline-section {
+    padding-left: 14%;
+    font-size: 1.3em;
+    padding-top: 20%;
+  }
+
+  .description {
+    max-width: 700px;
+    font-size: 1em;
+  }
+
+  .schedule {
+    font-size: 1.1em;
+  }
+
+  #program-section {
+    padding: 24px 14%;
+  }
+
+  #partners-section {
+    padding: 24px 14%;
   }
 }

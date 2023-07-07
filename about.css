@@ -142,7 +142,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 100vw;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,7 +313,7 @@ header {
 }
 
 footer {
-  padding: 12px 10%;
+  padding: 12px 6.4%;
 }
 
 .container2 {
@@ -423,5 +423,15 @@ footer div p {
 
   #footer-text2 {
     display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  #nav-bar2 {
+    padding: 4px 14%;
+  }
+
+  footer {
+    padding: 12px 14%;
   }
 }
