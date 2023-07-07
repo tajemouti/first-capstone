@@ -296,7 +296,7 @@ header {
   color: var(--dark);
 }
 
-.advisors-cards {
+.always-on {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -389,6 +389,7 @@ header {
   font-weight: 500;
   padding: 9px;
   cursor: pointer;
+  margin-top: 24px;
 }
 
 #more span {
@@ -546,7 +547,7 @@ footer div p {
     display: block;
   }
 
-  .advisors-cards {
+  .always-on {
     max-width: 820px;
     flex-flow: row wrap;
   }
