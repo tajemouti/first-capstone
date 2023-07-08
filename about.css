@@ -427,6 +427,10 @@ footer div p {
 }
 
 @media (width >= 1024px) {
+  .nav-bar1-list {
+    margin-right: 14%;
+  }
+  
   #nav-bar2 {
     padding: 4px 14%;
   }

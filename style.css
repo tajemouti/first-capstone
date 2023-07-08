@@ -229,6 +229,12 @@ header {
   background-image: radial-gradient(#272a31 2px, transparent 0);
   background-size: 15px 15px;
   background-position: -19px -19px;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: scale(1.1);
+  border: 2px solid #d3d3d3;
 }
 
 .event-icon {
@@ -584,6 +590,10 @@ footer div p {
 }
 
 @media (width >= 1024px) {
+  .nav-bar1-list {
+    margin-right: 14%;
+  }
+
   #nav-bar2 {
     padding: 4px 14%;
   }
